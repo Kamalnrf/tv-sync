@@ -4,6 +4,15 @@ Sync Television channels across your machines and with people you trust. Design 
 
 Every machine keeps a full copy of the channels it syncs. Changes travel through a small relay on Cloudflare and merge with [Loro](https://loro.dev) CRDTs, so no machine has to stay on, and none needs a network path to another.
 
+![Television on a Mac (left) and in an Ubuntu VM (right), sharing one channel: typing in a plan, a comment, ticked tasks and a pet's lights going out all show up on the other side within seconds](docs/demo.gif)
+
+Left: Television on a Mac. Right: Television in a sandbox VM. Each runs tv-sync, and the two meet only through the relay.
+
+<p>
+  <img src="docs/comment.jpg" width="49%" alt="A comment added on the Mac's design is already in the VM's comment panel">
+  <img src="docs/lights-off.jpg" width="49%" alt="The channel pet's light turned off on the Mac is off in the VM too">
+</p>
+
 ## Install
 
 You need Television (`tv`) and [Rust](https://rustup.rs). This installs tv-sync, plus a skill that teaches your coding agents how to share channels and what syncs. Run it again to update both.
