@@ -1,0 +1,4 @@
+node_modules/
+# Local secrets, and Alchemy's state, local data and bundles.
+.env
+.alchemy/

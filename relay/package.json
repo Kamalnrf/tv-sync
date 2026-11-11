@@ -1,0 +1,24 @@
+{
+  "name": "tv-sync-relay",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "alchemy dev",
+    "login": "alchemy profile edit --profile tv-sync --add Cloudflare",
+    "plan": "alchemy plan --profile tv-sync --stage prod",
+    "deploy": "alchemy deploy --profile tv-sync --stage prod",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "loro-crdt": "1.17.1",
+    "loro-protocol": "0.3.0"
+  },
+  "devDependencies": {
+    "@alchemy.run/cloudflare": "2.0.0-beta.85",
+    "@cloudflare/workers-types": "^5.20261110.1",
+    "@effect/platform-node": "^4.1.4",
+    "alchemy": "2.0.0-beta.85",
+    "effect": "^4.1.4",
+    "typescript": "^5.9.3"
+  }
+}
